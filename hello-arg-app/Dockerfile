@@ -4,11 +4,11 @@ FROM eclipse-temurin:17-jdk
 ARG JAR_FILE
 
 #COPY ./target/billing.jar .
-ADD ${JAR_FILE} billing.jar
+ADD ${JAR_FILE} app.jar
 
 #SE ESPECIFICA EL PUERTO PARA SABER QUE PUERTO SE CONFIGURO EN LA APLICACION
 #NO SOBREESCRIBE EL PUERTO QUE SE CONFIGURO EN LA APLICACION
 EXPOSE 8081
 
-ENTRYPOINT ["java", "-jar", "billing.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
 
