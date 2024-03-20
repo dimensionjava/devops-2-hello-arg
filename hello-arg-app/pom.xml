@@ -11,7 +11,7 @@
 	<groupId>com.dimension</groupId>
 	<artifactId>hello-arg-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>billing</name>
+	<name>hello-arg-app</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
