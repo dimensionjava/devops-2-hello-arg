@@ -1,9 +1,8 @@
 FROM eclipse-temurin:17-jdk
 
-#WORKDIR /app
+#JAR_FILE=/target/*.jar
 ARG JAR_FILE
 
-#COPY ./target/billing.jar .
 ADD ${JAR_FILE} app.jar
 
 #SE ESPECIFICA EL PUERTO PARA SABER QUE PUERTO SE CONFIGURO EN LA APLICACION
