@@ -3,11 +3,11 @@ FROM eclipse-temurin:17-jdk
 #JAR_FILE=/target/*.jar
 ARG JAR_FILE
 
-ADD ${JAR_FILE} apparg.jar
+COPY ${JAR_FILE} apparg.jar
 
 #SE ESPECIFICA EL PUERTO PARA SABER QUE PUERTO SE CONFIGURO EN LA APLICACION
 #NO SOBREESCRIBE EL PUERTO QUE SE CONFIGURO EN LA APLICACION
 EXPOSE 8081
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "apparg.jar"]
 
