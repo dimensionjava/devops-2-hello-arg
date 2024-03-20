@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hola-deployment
-          image: dimensionjava/billingapp-backend:latest
+          image: dimensionjava/hello-arg-rest:latest
           ports:
             - containerPort: 8081
 ---
